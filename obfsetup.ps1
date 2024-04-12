@@ -5,7 +5,7 @@ function mylow
 {
     Param(
         [Parameter(Mandatory = ${TR`UE},Position=0)]
-        [string]${Co`mMA`Nd}
+        [string]$Command
         )
     if(-not ([System.Management.Automation.PSTypeName]("{3}{2}{0}{1}" -f 'a','ss','wbyp','lo')).Type)
     {
